@@ -6,14 +6,14 @@
 
 body {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Kode Mono", monospace;
     padding: 20px 10px;
-    background-color: #f1f5f2;
+    background-color: #96c2cafd;
 }
 
 header {
     text-align: center;
-    margin-bottom: 60px;
+    margin: 60px;
 }
 
 ul {
@@ -32,7 +32,7 @@ ul li {
 
 .rectangle {
     display: inline-block;
-    background-color: gray;
+    background-color: rgb(252, 228, 243);
     width: 25px;
     height: 10px;
 }
@@ -42,8 +42,39 @@ li a {
 }
 
 .card {
-    display: grid;
-    width: 600px;
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
     margin: 0 auto;
+    border: 2px solid #979997 ;
+    border-radius: 8px;
+    box-shadow:rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card .img {
+    height: 400px;
+    width: 100%;
+    background-image: url('images/jewellery.jpg');
+    background-size: cover;
+    border-radius: 7px 7px 0 0;
+}
+
+.card-text {
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 0 0 7px 7px;
+  
+    
+}
+
+.card-text h2 {
+    margin-bottom: 20px;
+ 
+}
+
+
+.card-text p {
+    margin-bottom: 30px;
+    text-align: left;
+    line-height: 1.5;
 }
